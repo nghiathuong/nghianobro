@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+
+<head>
+    <meta charset='utf-8'/>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+    <title>Bio Card By Trinh Ngoc Minh</title>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+    <link href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'/>
+  
+  		<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js'/>
+
+    <b:skin><![CDATA[
+        
+/*----------------------------------*/
+/* Name: Template Profile V2       */
+/* @Auth: Trinh Ngoc Minh ©       */
+/* @Editor: ( n?u có )           */
+/*------------------------------*/
+------_¯_-----_¯_
+-----_¦¦¦¯¯¯¯¯¦¦¦_
+-__--¦¦¦¦¦¦¦¦¦¦¦¦¦--__
+¦__¦-¦¦¦¯¦¦-¦¦¯¦¦¦-¦__¦
+    ]]></b:skin>
+    <style>
+html {
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(https://i.imgur.com/eVa9rJW.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    min-height: 450px;
+    background:rgba(0,0,0,0.75);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.card:hover{
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.2);
+}
+
+.card .box{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card .box .img{
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.card .box .img img{
+    width: 100%;
+}
+
+.card .box h2{
+    font-size: 22px;
+    color: #262626;
+}
+
+.card .box h2 span{
+    font-size: 14px;
+    background: #e91e63;
+    color: #fff;
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 15px;
+}
+
+.card .box p{
+    color: #F9F1E9;
+}
+
+.card .box ul{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.card .box ul li{
+    list-style: none;
+    float: left;
+}
+
+.card .box ul li a{
+    display: block;
+    color: #aaa;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.card .box ul li:hover a{
+    color: #e91e63;
+    transform: rotateY(360deg);
+}
+#nicknname {
+      color: #F9F1E9;
+}
+#facebook-minh {
+      color: #F9F1E9;
+}
+#twitter-minh {
+      color: #F9F1E9;
+}
+#google-minh {
+      color: #F9F1E9;
+}
+#likedin-minh {
+      color: #F9F1E9;
+}
+#instagram-minh {
+      color: #F9F1E9;
+}
+    </style>
+</head>
+
+<body id='particles-js'>
+  <div class='container'>
+    <b:section id='trinhngocminh'/>
+    <div class='card'>
+        <div class='box'>
+            <!-- ?nh d?i di?n c?a user -->
+            
+              <div class='img'><img alt='Hello world' src='https://i.imgur.com/8QxzNeE.png'/></div> <!-- Link ?nh c?a ae nhé-->  --&gt;
+            <!-- Username và title c?a user -->
+                  <h2 id='nicknname'>Trinh Ngoc Minh<i aria-hidden='true' class='fa fa-heart' style='color: red;'/>
+<br><span>Blogger</span></br></h2>
+            <!-- Bio ? dây -->
+            <p>
+<i aria-hidden='true' class='fa fa-quote-left'/>
+Tôi là 1 ngu?i cham ch? tìm ki?m h?c h?i ki?n th?c v? l?p trình trên m?ng . Có u?c mo tr? thành Developer <i aria-hidden='true' class='fa fa-quote-right'/></p>
+            <!-- Các social button, s? d?ng FontAwesome icons -->
+          <div id='hello'>  
+          <ul>
+          <!-- vd mình ko có likedin thì mình ?n nhu sau -->
+                <li><a href='https://fb.com/trinhngocminh.profile.off'><i class='fa fa-facebook' id='facebook-minh'/></a></li>
+                <li><a href='https://twitter.com/dalat_atul'><i class='fa fa-twitter' id='twitter-minh'/></a></li>
+                <li><a href='mailto:we@trinhngocmih.com'><i class='fa fa-google-plus' id='google-minh'/></a></li>
+                <!-- <li><a href='#'><i class='fa fa-linkedin' id='likedin-minh'/></a></li> -->  <!--Xong nhé , dán vô blogger thôi-->
+                <li><a href='https://instagram.com/trinhngocminh.tn'><i class='fa fa-instagram' id='instagram-minh'/></a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+ </div>
+  </body>
+  <!-- M?t chút hi?u ?ng -->
+ <script src='https://github.trinhngocminh.com/particles/particles.js'/>
+<script>particlesJS(&quot;particles-js&quot;, {
+  &quot;particles&quot;: {
+    &quot;number&quot;: {
+      &quot;value&quot;: 160,
+      &quot;density&quot;: {
+        &quot;enable&quot;: true,
+        &quot;value_area&quot;: 800
+      }
+    },
+    &quot;color&quot;: {
+      &quot;value&quot;: &quot;#ffffff&quot;
+    },
+    &quot;shape&quot;: {
+      &quot;type&quot;: &quot;circle&quot;,
+      &quot;stroke&quot;: {
+        &quot;width&quot;: 0,
+        &quot;color&quot;: &quot;#000000&quot;
+      },
+      &quot;polygon&quot;: {
+        &quot;nb_sides&quot;: 5
+      },
+      &quot;image&quot;: {
+        &quot;src&quot;: &quot;img/github.svg&quot;,
+        &quot;width&quot;: 100,
+        &quot;height&quot;: 100
+      }
+    },
+    &quot;opacity&quot;: {
+      &quot;value&quot;: 1,
+      &quot;random&quot;: true,
+      &quot;anim&quot;: {
+        &quot;enable&quot;: true,
+        &quot;speed&quot;: 1,
+        &quot;opacity_min&quot;: 0,
+        &quot;sync&quot;: false
+      }
+    },
+    &quot;size&quot;: {
+      &quot;value&quot;: 3,
+      &quot;random&quot;: true,
+      &quot;anim&quot;: {
+        &quot;enable&quot;: false,
+        &quot;speed&quot;: 4,
+        &quot;size_min&quot;: 0.3,
+        &quot;sync&quot;: false
+      }
+    },
+    &quot;line_linked&quot;: {
+      &quot;enable&quot;: false,
+      &quot;distance&quot;: 150,
+      &quot;color&quot;: &quot;#ffffff&quot;,
+      &quot;opacity&quot;: 0.4,
+      &quot;width&quot;: 1
+    },
+    &quot;move&quot;: {
+      &quot;enable&quot;: true,
+      &quot;speed&quot;: 1,
+      &quot;direction&quot;: &quot;none&quot;,
+      &quot;random&quot;: true,
+      &quot;straight&quot;: false,
+      &quot;out_mode&quot;: &quot;out&quot;,
+      &quot;bounce&quot;: false,
+      &quot;attract&quot;: {
+        &quot;enable&quot;: false,
+        &quot;rotateX&quot;: 600,
+        &quot;rotateY&quot;: 600
+      }
+    }
+  },
+  &quot;interactivity&quot;: {
+    &quot;detect_on&quot;: &quot;canvas&quot;,
+    &quot;events&quot;: {
+      &quot;onhover&quot;: {
+        &quot;enable&quot;: true,
+        &quot;mode&quot;: &quot;bubble&quot;
+      },
+      &quot;onclick&quot;: {
+        &quot;enable&quot;: true,
+        &quot;mode&quot;: &quot;repulse&quot;
+      },
+      &quot;resize&quot;: true
+    },
+    &quot;modes&quot;: {
+      &quot;grab&quot;: {
+        &quot;distance&quot;: 400,
+        &quot;line_linked&quot;: {
+          &quot;opacity&quot;: 1
+        }
+      },
+      &quot;bubble&quot;: {
+        &quot;distance&quot;: 250,
+        &quot;size&quot;: 0,
+        &quot;duration&quot;: 2,
+        &quot;opacity&quot;: 0,
+        &quot;speed&quot;: 3
+      },
+      &quot;repulse&quot;: {
+        &quot;distance&quot;: 400,
+        &quot;duration&quot;: 0.4
+      },
+      &quot;push&quot;: {
+        &quot;particles_nb&quot;: 4
+      },
+      &quot;remove&quot;: {
+        &quot;particles_nb&quot;: 2
+      }
+    }
+  },
+  &quot;retina_detect&quot;: true
+}); 
+</script>
+  <script type='text/javascript'>
+//<![CDATA[
+!function(e,t,a){function n(){c(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"),o(),r()}function r(){for(var e=0;e<d.length;e++)d[e].alpha<=0?(t.body.removeChild(d[e].el),d.splice(e,1)):(d[e].y--,d[e].scale+=.004,d[e].alpha-=.013,d[e].el.style.cssText="left:"+d[e].x+"px;top:"+d[e].y+"px;opacity:"+d[e].alpha+";transform:scale("+d[e].scale+","+d[e].scale+") rotate(45deg);background:"+d[e].color+";z-index:99999");requestAnimationFrame(r)}function o(){var t="function"==typeof e.onclick&&e.onclick;e.onclick=function(e){t&&t(),i(e)}}function i(e){var a=t.createElement("div");a.className="heart",d.push({el:a,x:e.clientX-5,y:e.clientY-5,scale:1,alpha:1,color:s()}),t.body.appendChild(a)}function c(e){var a=t.createElement("style");a.type="text/css";try{a.appendChild(t.createTextNode(e))}catch(t){a.styleSheet.cssText=e}t.getElementsByTagName("head")[0].appendChild(a)}function s(){return"rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")"}var d=[];e.requestAnimationFrame=function(){return e.requestAnimationFrame||e.webkitRequestAnimationFrame||e.mozRequestAnimationFrame||e.oRequestAnimationFrame||e.msRequestAnimationFrame||function(e){setTimeout(e,1e3/60)}}(),n()}(window,document);
+//]]>
+</script>
+<!-- Copyright All Rights Reserved Trinh Ngoc Minh  - TrinhNgocMinh.com -->
+</html>
